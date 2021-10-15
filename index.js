@@ -46,7 +46,7 @@ const questionStart = () => {
     ])
 };
 
-const generateFile = ({ title, usage, describe, learn, github, install, credits, license}) =>
+const generateFile = ({ title, usage, describe, github, install, credits, license}) =>
 `
 Project Title: 
 ${title}

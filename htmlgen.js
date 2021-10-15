@@ -1,3 +1,4 @@
+//Attemt to make redme file it's own moddule and export it but the export wasn't grabiing on the index file
 // module.exports = {
 //     genReadMe,
 //   };
