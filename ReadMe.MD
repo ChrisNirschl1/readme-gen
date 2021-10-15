@@ -1,11 +1,11 @@
 
 Project Title: 
-Readme generator 
+Read-Me generator
 
 
  ## Description
  
- A project designed to make generating Readme's easier after a long project
+ Making a readme generator
    
  ## Table of Contents
  * [Installation](#installation)
@@ -14,21 +14,20 @@ Readme generator
  * [Credits](#credits)
  * [License](#license)
  
- 
 
 
    ## Installation
-   Install it via Github
+   Need to install Inquirer from NPM and FS from standard node library
     
    ## Usage
 
-   Making Readme's
+   Generating Read-mes after a long project 
 
 
     
        
    ## Credits
-   ChrisNirschl1, NPM
+   ChrisNirschl1
     
    ## License
 
