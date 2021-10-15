@@ -1,9 +1,10 @@
+//Installs inquirer and file system 
 const inquirer = require('inquirer');
 const fs = require('fs');
 
 // const genReamMe = require('./htmlgen.js');
 
-
+//Wraps inquirer prompt in a function to run
 const questionStart = () => {
     return inquirer.prompt([
         {
@@ -24,7 +25,7 @@ const questionStart = () => {
         {
             type: 'input',
             name: 'github',
-            message: 'Enter your GitHub username.',//creates link to profile
+            message: 'Enter your GitHub username.',
         },
         {
             type: 'input',
@@ -45,7 +46,7 @@ const questionStart = () => {
         },
     ])
 };
-
+//Creates ReadMe template and where to place 
 const generateFile = ({ title, usage, describe, github, install, credits, license}) =>
 `
 Project Title: 
@@ -56,12 +57,13 @@ ${title}
  
  ${describe}
    
-  ## Table of Contents (Optional)
-   
-   - [Installation](#installation)
-   - [Usage](#usage)
-   - [Credits](#credits)
-   - [License](#license)
+ ## Table of Contents
+ * [Installation](#installation)
+ * [Usage](#usage)
+ * [Contributing](#contributing)
+ * [Credits](#credits)
+ * [License](#license)
+ 
 
 
    ## Installation
@@ -87,9 +89,10 @@ ${title}
 
 
    `;
-
+//Function to run everything
 const runtime = () => {
 
+//starts inquierer prompt 
 questionStart() 
 
 .then((data) => {
